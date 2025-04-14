@@ -99,6 +99,8 @@ describe('functions-tasks', () => {
         },
       ].forEach((data) => {
         data.results.forEach((test) => {
+          console.log(123, test.y, test.x, data.polynom(test.x));
+          console.log(234, test.y, data.polynom(test.x));
           assert(test.y === data.polynom(test.x));
         });
       });
