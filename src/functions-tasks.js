@@ -219,7 +219,7 @@ function partialUsingArguments(fn, ...args) {
  */
 function getIdGeneratorFunction(startFrom) {
   let currentId = startFrom;
-  return function () {
+  return () => {
     currentId += 1;
     return currentId - 1;
   };
